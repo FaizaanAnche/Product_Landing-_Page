@@ -14,10 +14,6 @@ section{
     background-color: whitesmoke;
 }
 
-section:nth-child(odd){
-    background-color: white;
-}
-
 .icon{
     display: flex;
     align-items: center;
@@ -25,23 +21,28 @@ section:nth-child(odd){
     text-transform: uppercase;
     height: 80px;
     margin-left:100px;
+    font-weight: 900;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 /* header */
+
 #header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    border-bottom: 4px solid black;
+    border-bottom: 4px solid darkorange;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     background-color: white;
 }
-
-
 
 #header-img{
     height: 30px;
@@ -61,8 +62,6 @@ section:nth-child(odd){
 }
 
 .nav-link{
-    text-decoration: none;
-    color: black;
     margin-right: 30px;
     font-size: 18px;
     padding: 5px;
@@ -72,6 +71,7 @@ section:nth-child(odd){
 .nav-link:hover{
     transform: scale(1.1); 
     transition: transform 0.3s ease;
+    color: darkorange;
 }
 
 /* Get Started */
@@ -82,6 +82,10 @@ section:nth-child(odd){
     justify-content: center;
     align-items: center;
     text-align: center;
+    background: url("./assets/bg-home.jpg");
+    background-size: cover;
+    background-position: center center;
+    color: white;
 }
 
 .home-header h1{
@@ -104,6 +108,7 @@ section:nth-child(odd){
     text-align: center;
     border-radius: 20px;
     font-size: 1rem;
+    border: 3px solid darkorange;
 }
 
 .btn{
@@ -111,18 +116,20 @@ section:nth-child(odd){
     padding: 10px;
     border-radius: 20px;
     font-size: 1rem;
+    border: 3px solid darkorange;
 }
 
 .btn:hover{
     transform: scale(1.1); 
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
+    border: 0; 
+    background-color: darkorange;
+    color: white;
 }
 
 /* Features */
 
 #features{
-    max-width: 1000px;
-    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -131,6 +138,8 @@ section:nth-child(odd){
 
 .feature{
     display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .feature-icon{
@@ -161,9 +170,61 @@ section:nth-child(odd){
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: url("./assets/bg-video.jpg");
+    background-size: cover;
+    background-position: center center;
 }
 
-#piano_video iframe{
+#video{
     max-width: 560px;
     width: 100%;
 }
+
+/* pricing */
+
+.pricing-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 3rem;
+}
+
+.piano-type{
+    flex: 1;
+    max-width: 400px;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 10%;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.piano-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.piano-price{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.piano-desc{
+    padding: 15px;
+}
+
+.piano-type:hover{
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
+    border: 3px solid darkorange;
+}
+
+/* footer */
+footer{
+    padding: 5px;
+    text-align: right;
+    border-top: 1px solid darkorange;
+    background-color: white;
+}
+
