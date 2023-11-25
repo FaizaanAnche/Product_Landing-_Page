@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+section:nth-child(odd){
+    background-color: white;
+}
+
+/* header */
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border-bottom: 4px solid black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    height: 80px;
+    margin-left:100px;
+}
+
+#header-img{
+    height: 30px;
+    width: 30px;
+    margin-right: 8px;
+}
+
+.icon:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+    margin-right: 30px;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.nav-link:hover{
+    background-color: red; 
+    color: white;
+    transition: 0.3s;
+}
+
+/* Get Started */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home-header h1{
+    font-size: 4rem;
+    margin-bottom: 8px;
+}
+
+.home-header p{
+    font-size: 1.8rem;
+}
+
+#form{
+    margin-top: 50px;
+}
+
+#email{
+    display: block;
+    width: 60vw;
+    height: 3rem;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+.btn{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+.btn:hover{
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+}
+
