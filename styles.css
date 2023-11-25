@@ -18,6 +18,15 @@ section:nth-child(odd){
     background-color: white;
 }
 
+.icon{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    height: 80px;
+    margin-left:100px;
+}
+
 /* header */
 #header{
     display: flex;
@@ -32,14 +41,7 @@ section:nth-child(odd){
     background-color: white;
 }
 
-.icon{
-    display: flex;
-    align-items: center;
-    font-size: 30px;
-    text-transform: uppercase;
-    height: 80px;
-    margin-left:100px;
-}
+
 
 #header-img{
     height: 30px;
@@ -52,6 +54,12 @@ section:nth-child(odd){
     transition: transform 0.3s ease; 
 }
 
+#nav-bar{
+    display: flex;
+    height: 80px;
+    align-items: center;
+}
+
 .nav-link{
     text-decoration: none;
     color: black;
@@ -62,9 +70,8 @@ section:nth-child(odd){
 }
 
 .nav-link:hover{
-    background-color: red; 
-    color: white;
-    transition: 0.3s;
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
 }
 
 /* Get Started */
@@ -83,7 +90,7 @@ section:nth-child(odd){
 }
 
 .home-header p{
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 #form{
@@ -111,3 +118,52 @@ section:nth-child(odd){
     transition: transform 0.3s ease; 
 }
 
+/* Features */
+
+#features{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature{
+    display: flex;
+}
+
+.feature-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20%;
+}
+
+.f_icon{
+    font-size: 35px;
+    color: darkorange;
+}
+
+.feature-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80%;
+    padding: 5px;
+}
+
+/* vide0 */
+#piano_video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#piano_video iframe{
+    max-width: 560px;
+    width: 100%;
+}
