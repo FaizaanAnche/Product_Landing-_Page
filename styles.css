@@ -11,7 +11,7 @@ html{
 section{
     height: 100vh;
     width: 100%;
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 .icon{
@@ -225,6 +225,6 @@ footer{
     padding: 5px;
     text-align: right;
     border-top: 1px solid darkorange;
-    background-color: white;
+    background-color: whitesmoke;
 }
 
