@@ -8,19 +8,27 @@
     <title>Pianos</title>
 </head>
 <body>
-    <header id="header">
-        <div class="icon">
+   
+    <!-- header -->
+    <header>
+        <div class="logo">
             <a href="#home"><img src="./assets/icon.png" id="header-img">Piano</a>
         </div>
-            
-        <nav id="nav-bar">
-            <a href="#home" class="nav-link">Get Started</a>
-            <a href="#features" class="nav-link">Features</a>
-            <a href="#piano_video" class="nav-link">Making</a>
-            <a href="#pricing" class="nav-link">Pricing</a>
+        <nav class="nav-bar">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i id="icon" class="fas fa-bars"></i>
+            </label>
+            <ul class="nav-list">
+                <li><a href="#home" class="nav-link">Get Started</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#piano_video" class="nav-link">Making</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+            </ul>
         </nav>
     </header>
 
+    <!-- Get Started -->
     <section id="home">
 
         <div class="home-header">
@@ -33,6 +41,7 @@
         </form>
     </section>
 
+    <!-- Features -->
     <section id="features">
         <div class="feature">
             <div class="feature-icon">
@@ -80,10 +89,12 @@
         </div>
     </section>
 
+    <!-- Making -->
     <section id="piano_video">
         <iframe height="315" id="video" src="https://www.youtube.com/embed/watch?v=jAInt7hIZlU" frameborder="0" allowfullscreen></iframe>
     </section>
 
+    <!-- Pricing -->
     <section id="pricing">
 
         <div class="pricing-container">
@@ -125,12 +136,34 @@
                     </p>
                   </div>
             </a>
-            
-
     </section>
 
     <footer>
         Not A Real Site.
     </footer>
+
+    <script>
+        const checkbox = document.getElementById("check");
+        const navLinks = document.getElementsByClassName("nav-link");
+        const icon = document.getElementById("icon");
+
+        //navbar menu icon change
+        checkbox.addEventListener("change", function() {
+          if (checkbox.checked) {
+            icon.className = "fa-regular fa-circle-xmark";
+          } else {
+            icon.className = "fas fa-bars";
+          }
+        });
+
+        // navbar menu collapse
+        for( let i = 0; i<navLinks.length ; i++){
+            navLinks[i].addEventListener("click", function(){
+                checkbox.checked = false;
+                icon.className = "fas fa-bars";
+            });
+        }
+      </script>
+
 </body>
 </html>

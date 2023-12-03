@@ -31,7 +31,7 @@ a{
 
 /* header */
 
-#header{
+/* #header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,6 +42,12 @@ a{
     top: 0;
     left: 0;
     background-color: white;
+}
+
+header{
+
+    background-color: white;
+    border-bottom: 4px solid darkorange;
 }
 
 #header-img{
@@ -62,6 +68,7 @@ a{
 }
 
 .nav-link{
+    color: black;
     margin-right: 30px;
     font-size: 18px;
     padding: 5px;
@@ -72,6 +79,72 @@ a{
     transform: scale(1.1); 
     transition: transform 0.3s ease;
     color: darkorange;
+} */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 80px;
+    border-bottom: 4px solid darkorange;
+    z-index: 100;
+}
+
+#header-img{
+    height: 30px;
+    width: 30px;
+    margin-right: 8px;
+}
+
+.nav-bar{
+    display: flex;
+    height: 80px;
+    align-items: center;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 30px;
+    height: 80px;
+    align-items: center;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    margin: 10px;
+}
+
+.nav-link:hover{
+    transition: 0.5s;
+    color: darkorange;
+} 
+
+.logo{
+    font-size: 35px;
+    padding: 0 100px;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: black;
+    line-height: 80px;
+    margin-right: 40px ;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
 }
 
 /* Get Started */
@@ -228,3 +301,71 @@ footer{
     background-color: whitesmoke;
 }
 
+@media (max-width: 1280px){
+
+    .logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+
+    #features{
+        height: auto;
+        padding: 100px 0;
+    }
+
+    .feature{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 400px;
+    }
+
+
+    #pricing{
+        height: auto;
+        padding: 100px 0;
+    }
+
+    .pricing-container{
+        height: auto;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 858px){
+
+    /* navbar */
+    .logo{
+        font-size: 30px;
+        padding-left: 25px;
+    }
+
+    .checkbtn{
+        display: block;
+    }
+
+    .nav-list{
+        height: 40vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: fixed;
+        width: 100%;
+        background-color: whitesmoke;
+        top: 80px;
+        left: -100%;
+        transition: all 0.5s;
+        text-align: center;
+        border-bottom: 4px solid #fca311;
+    }
+
+    .nav-link{
+        margin: 50px;
+        line-height: 30px;
+    }
+
+    #check:checked ~ .nav-list{
+        left: 0;
+    }
+}
