@@ -14,22 +14,12 @@ section{
     background-color: white;
 }
 
-.icon{
-    display: flex;
-    align-items: center;
-    font-size: 30px;
-    text-transform: uppercase;
-    height: 80px;
-    margin-left:100px;
-    font-weight: 900;
-}
-
 a{
     text-decoration: none;
     color: black;
 }
 
-/* header */
+/* ---------- HEADER ---------- */
 
 /* #header{
     display: flex;
@@ -147,7 +137,7 @@ header{
     display: none;
 }
 
-/* Get Started */
+/* ---------- GET STARTED ---------- */
 
 #home{
     display: flex;
@@ -200,7 +190,7 @@ header{
     color: white;
 }
 
-/* Features */
+/* ---------- FEATURES ---------- */
 
 #features{
     display: flex;
@@ -237,7 +227,7 @@ header{
     padding: 5px;
 }
 
-/* vide0 */
+/* video */
 #piano_video{
     display: flex;
     flex-direction: column;
@@ -253,7 +243,7 @@ header{
     width: 100%;
 }
 
-/* pricing */
+/* ---------- PRICING ---------- */
 
 .pricing-container{
     display: flex;
@@ -265,7 +255,7 @@ header{
 
 .piano-type{
     flex: 1;
-    max-width: 400px;
+    max-width: 350px;
     padding: 20px;
     background-color: whitesmoke;
     border-radius: 10%;
@@ -335,6 +325,15 @@ footer{
 }
 
 @media (max-width: 858px){
+
+    .home-header h1{
+        font-size: 3rem;
+        margin-bottom: 8px;
+    }
+    
+    .home-header p{
+        font-size: 1rem;
+    }
 
     /* navbar */
     .logo{
